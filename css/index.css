@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/*slider start*/
+.slider {
+    width: 100%;
+    height: 448px;
+    margin: 10px 0 26px 0;
+    position: relative;
+}
+.sliderBox {
+    width: 1263px;
+    height: 448px;
+    z-index: 70;
+    overflow: hidden;
+    background-color: #c3c3c3;
+}
+.sliderBox .bd ul {
+    position: absolute;
+}
+.sliderBox .bd li {
+    height: 448px;
+    float: left;
+}
+.sliderBox .bd img {
+    width: 1263px;
+    height: 448px;
+}
+.sliderBox .hd {
+    position: absolute;
+    left: 45%;
+    bottom: -25px;
+    width: 20%;
+    z-index: 110;
+}
+.sliderBox .hd li {
+    float: left;
+    width: 51px;
+    height: 51px;
+    cursor: pointer;
+    margin-left: 5%;
+    position: relative;
+    overflow: hidden;
+    background: url("../images/ctrl.png") no-repeat 0px 0px;
+}
+.sliderBox .hd li.on {
+    background: url("../images/ctrl.png") no-repeat 0px -54px;
+}
+
+/*slider end*/
+
+/*main start*/
+.mainTop {
+    position: relative;
+}
+.new {
+    width: 320px;
+    height: 296px;
+    float: left;
+}
+.sliderNewBox {
+    width: 320px;
+    height: 218px;
+    position: relative;
+    overflow: hidden;
+}
+.sliderNewBox .hd {
+    width: 100%;
+    bottom: 30px;
+    right: 0px;
+    z-index: 150;
+    position: absolute;
+}
+.sliderNewBox .hd ul li {
+    float: right;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    line-height: 18px;
+    text-align: center;
+    background: #1e2024;
+    color: #fff;
+    position: relative;
+    cursor:pointer;
+    overflow: hidden;
+    margin-right: 5px;
+}
+.sliderNewBox .hd ul li.on {
+    background: #043a8e;
+}
+.sliderNewBox .bd {
+    height: 218px;
+}
+.sliderNewBox .bd .warp {
+    position: relative;
+    width: 320px;
+    overflow: hidden;
+}
+.sliderNewBox .bd .ulList {
+    width: 640px;
+    position: relative;
+    overflow: hidden;
+}
+.sliderNewBox .bd li {
+    float: left;
+    width: 320px;
+}
+.sliderNewBox .bd li .pic img {
+    width: 320px;
+    height: 190px;
+}
+.sliderNewBox .bd li .title {
+    text-align: center;
+    background: #040507;
+    height: 28px;
+    line-height: 25px;
+    width: 320px;
+    opacity: 0.8;
+}
+.sliderNewBox .bd li .title a {
+    color: #b4b4b4;
+}
+.newList {
+    width: 531px;
+    height: 218px;
+    padding: 58px 30px 20px 30px;
+    float: left;
+    overflow: hidden;
+}
+.newList li {
+    width: 100%;
+    height: 31px;
+}
+.newList li a {
+    font: 400 14px/31px "microsoft yahei";
+    line-height: 31px;
+}
+.newList li span {
+    margin-left: 17px;
+    color: #808080;
+}
+.newAbout {
+    width: 249px;
+    height: 218px;
+    float: left;
+    margin-top: 54px;
+    overflow: hidden;
+}
+.newAbout li {
+    position: relative;
+    background: url("../images/ctrl.png") no-repeat -145px -137px;
+    height: 70px;
+    line-height: 70px;
+    width: 249px;
+    display: block;
+    margin-bottom: 4px;
+
+}
+.newAbout li a {
+    display: inline-block;
+    text-align: center;
+    width: 249px;
+    height: 70px;
+    line-height: 70px;
+}
+.newAbout .CorporateCulture {
+    background: url("../images/ctrl.png") no-repeat -60px -94px;
+    width: 46px;
+    height: 36px;
+    float: left;
+    display: inline-block;
+    margin: 16px 0px 0px 32px;
+}
+.newAbout .Recruitment {
+    background: url("../images/ctrl.png") no-repeat -107px -94px;
+    width: 49px;
+    height: 36px;
+    float: left;
+    display: inline-block;
+    margin: 16px 0px 0px 32px;
+}
+.newAbout .Guestbook {
+    background: url("../images/ctrl.png") no-repeat -157px -94px;
+    width: 49px;
+    height: 36px;
+    float: left;
+    display: inline-block;
+    margin: 16px 0px 0px 29px;
+}
+.newAbout li a h3 {
+    font-size: 16px;
+    position: absolute;
+    left: 99px;
+    color: #000;
+}
+.newAbout li a h4 {
+    color: #808080;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: normal;
+    position: absolute;
+    top: 18px;
+    left: 99px;
+}
+.mainDown {
+    position: relative;
+}
+.cnTitle {
+    color: #0e3a82;
+    font: 800 22px/58px "microsoft yahei";
+    line-height: 58px;
+}
+.enTitle {
+    color: #808080;
+    font: 800 20px/58px "microsoft yahei";
+    line-height: 58px;
+}
+.thchnology {
+    width: 320px;
+    height: 296px;
+    float: left;
+}
+.imgBox {
+    width: 320px;
+    height: 218px;
+    overflow: hidden;
+}
+.imgBox li {
+    background: #c3c3c3;
+    width: 320px;
+    height: 37px;
+    float: left;
+    line-height: 37px;
+    color: #4c4c4c;
+    margin-top: 3px;
+    font-size: 14px;
+    display: inline-block;
+}
+.imgBox li span {
+    background: url("../images/ctrl.png") no-repeat -10px -129px;
+    width: 30px;
+    height: 25px;
+    float: left;
+    display: inline-block;
+    margin: 7px 0 0 6px;
+}
+.imgBox li a {
+    margin-left: 8px;
+    float: left;
+    height: 37px;
+    line-height: 37px;
+    color: #fff;
+}
+.imgBox .selLi {
+    width: 320px;
+    background: #012b70;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+}
+.imgBox .selLi a {
+    margin-bottom: 8px;
+    line-height: 37px;
+    color: #FFF;
+    height: 15px;
+    line-height: 37px;
+    float: left;
+}
+.imgBox p {
+    width: 320px;
+    height: 66px;
+    background: #fff;
+    color: #666;
+    padding: 16px 0;
+    font-size: 12px;
+    margin-top: 34px;
+    line-height: 18px;
+    overflow: hidden;
+}
+.imgBox p img {
+    float: left;
+    width: 71px;
+    height: 54px;
+    margin-right: 13px;
+}
+.imgBox p .more {
+    color: #012b70;
+    line-height: 18px;
+    float: right;
+    margin-right: 10px;
+}
+.honor {
+    position: relative;
+}
+.productTitle {
+    margin-left: 40px;
+}
+.product {
+    width: 825px;
+    height: 218px;
+    margin-left: 15px;
+    float: left;
+    overflow: hidden;
+}
+.product .hd {
+    position: absolute ;
+    top: 0;
+    right: 0;
+}
+.product .hd ul li {
+    margin-left: 13px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    background: url("../images/ctrl.png") no-repeat -32px -112px;
+    width: 13px;
+    height: 13px;
+}
+.product .hd ul li.on {
+    background: url("../images/ctrl.png") no-repeat -8px -112px;
+}
+.bd .picList {
+    width: 2200px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 15px;
+}
+.bd .picList li {
+    float: left;
+    width: 249px;
+    height: 218px;
+    margin-left: 26px;
+}
+.bd .picList img {
+    width: 249px;
+    height: 171px;
+}
+.bd .picList .title {
+    background: #c3c3c3;
+    margin-top: 2px;
+    width: 231px;
+    height: 46px;
+    padding: 0 9px;
+    line-height: 46px;
+    display: inline-block;
+    text-align: center;
+}
+/*main end*/
+

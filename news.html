@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>四川科瑞软件有限责任公司</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js" ></script>
+    <script type="text/javascript" src='js/template-native.js'></script>
+</head>
+<style>
+ .newsMain li a {
+    display: block;
+    height: 104px;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+ }
+ .newsMain li a:hover {
+    border: 2px solid #d9d9d9;
+    box-shadow: 3px 3px 48px 2px #666;
+ }
+ .newsMain .time {
+    position: absolute;
+    width: 70px;
+    height: 58px;
+    line-height: 58px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f8f8f8;
+ }
+ .newsMain .time .day {
+    font-size: 50px;
+    color: #999;
+ }
+ .newsMain .time .ym {
+    font-size: 14px;
+    border-top: 1px solid #e8e8e8;
+    color: #aaa;
+    line-height: 30px;
+ }
+ .newsMain .cover img {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    left: 110px;
+ }
+ .newsMain .content {
+    position: absolute;
+    left: 290px;
+ }
+ .newsMain .content h2 {
+    font-weight: 400;
+    font-size: 18px;
+    display: block;
+ }
+ .newsMain .content p {
+    display: block;
+    margin-right: 30px;
+ }
+ #getmore {
+    width: 100px;
+    color: #01296b;
+    margin: 100px 370px 70px 370px;
+ }
+
+ .textContent {
+     margin-bottom: 50px;
+ }
+ .txtMarquee {
+     width: 452px;
+     margin-top: 26px;
+     position: relative;
+     border: 1px solid #ccc;
+     background-color: pink;
+     margin-bottom: 30px;
+ }
+ .txtMarquee .hd {
+     overflow: hidden;
+     height: 30px;
+     padding: 0 10px;
+     background: #39A4DC;
+ }
+ .txtMarquee .hd .prev,
+ .txtMarquee .hd .next {
+     display: block;
+     width: 9px;
+     height: 5px;
+     float: right;
+     margin-right: 5px;
+     margin-top: 10px;
+     overflow: hidden;
+     cursor: pointer;
+     background: url("images/arrow.png") no-repeat 0 -100px;
+ }
+ .txtMarquee .hd .next {
+     background-position: 0 -140px;
+ }
+ .txtMarquee .bd {
+     padding: 15px;
+
+ }
+ .txtMarquee .bd .tempWrap {
+     position: relative;
+     overflow: hidden;
+     height: 120px;
+ }
+ .txtMarquee .infoList {
+     height: 325px;
+     position: relative;
+ }
+ .txtMarquee .infoList li {
+     height: 24px;
+     line-height: 24px;
+ }
+ .txtMarquee .infoList li .date {
+     float: right;
+     color: #999;
+ }
+ .congratulate {
+     position: fixed;
+     width: 106px;
+     height: 401px;
+     top: 45%;
+     right: 150px;
+     z-index: 120;
+     background: url("images/congratulate.jpg") no-repeat;
+ }
+ .congratulate .close {
+     width: 19px;
+     height: 19px;
+     background: url("images/close.png") no-repeat 0 -19px;
+ }
+ .newList li {
+     font: 400 14px/30px "microsoft yahei";
+     padding: 6px 0;
+     margin-bottom: 10px;
+ }
+ #videoCenter {
+     height: 800px;
+ }
+</style>
+<body>
+<!--top start-->
+<div class="top">
+    <div class="w">
+        <div class="logo">
+            <a href="keway.html" title="四川科瑞软件有限责任公司"><img src="images/logo.png" alt="四川科瑞软件有限责任公司"></a>
+        </div>
+        <div class="siteNav">
+            <div class="topMenu">
+                <a href="contactUs.html" title="联系我们">联系我们</a> |
+                <a href="javascript:;" title="收藏本站">收藏本站</a> |
+                <a href="javascript:;" title="新浪微博" class="sinaWeibo"></a>
+                <a href="javascript:;" title="qq微博" class="qqWeibo"></a>
+            </div>
+            <ul id="nav" class="nav clearfix">
+                <li class="nLi">
+                    <h3><a href="keway.html">首页</a></h3>
+                </li>
+                <li class="nLi ">
+                    <h3><a href="product.html">产品中心</a></h3>
+                    <ul class="sub" style="display: none;">
+                        <li><a href="javascript:;">KR SHOP</a></li>
+                        <li><a href="javascript:;">KR SITES</a></li>
+                        <li><a href="javascript:;">移动互联</a></li>
+                        <li><a href="javascript:;">软件定制</a></li>
+                        <li><a href="javascript:;">软件测评</a></li>
+                    </ul>
+                </li>
+                <li class="nLi on">
+                    <h3><a href="news.html">新闻中心</a></h3>
+                </li>
+                <li class="nLi ">
+                    <h3><a href="about.html">关于科瑞</a></h3>
+                    <ul class="sub" style="display: none;">
+                        <li><a href="javascript:;">公司简介</a></li>
+                        <li><a href="javascript:;">业务覆盖</a></li>
+                        <li><a href="javascript:;">荣誉资质</a></li>
+                        <li><a href="javascript:;">企业文化</a></li>
+                        <li><a href="javascript:;">合作伙伴</a></li>
+                    </ul>
+                </li>
+                <li class="nLi ">
+                    <h3><a href="resource.html">人力资源</a></h3>
+                </li>
+            </ul>
+            <script>
+                jQuery("#nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+            </script>
+        </div>
+    </div>
+
+</div>
+<div class="banner clearfix">
+    <img src="images/banner_4.jpg" alt="banner_4"/>
+</div>
+<!--top end-->
+
+<!--menuBox start-->
+<div class="menuBox clearfix">
+    <div class="w">
+        <div class="menuFixed">
+            <div class="menuBanner">
+                <ul class="site">
+                    <li class="title" style="background: #01296b;">
+                        <h2>新闻中心</h2>
+                        <h3>NEWS CENTER</h3>
+                    </li>
+                    <li>
+                        <a href="#trends" title="科瑞动态" class="trends sel">科瑞动态</a>
+                    </li>
+                    <li>
+                        <a href="#focus" title="媒体聚焦" class="focus">媒体聚焦</a>
+                    </li>
+                    <li>
+                        <a href="#videoCenter" title="视频中心" class="videoCenter">视频中心</a>
+                    </li>
+                    <li class="newAboutBox">
+                        <ul class="newAbout2">
+                            <li>
+                                <a href="about.html">
+                                    <span class="CorporateCulture"></span>
+                                    <h3>企业文化</h3>
+                                    <h4>CorporateCulture</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="resource.html">
+                                    <span class="Recruitment"></span>
+                                    <h3>人才招聘</h3>
+                                    <h4>Recruitment</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span class="Guestbook"></span>
+                                    <h3>咨询留言</h3>
+                                    <h4>Guestbook</h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+
+            $(window).scroll(function() {
+                $(".site>li a").on("click",function(){
+                    $(".site>li a").removeClass("sel");
+                    $(this).addClass("sel");
+                });
+                var tt = $("#trends").offset().top - $(window).scrollTop();
+                var ft = $("#focus").offset().top - $(window).scrollTop();
+                var vt = $("#videoCenter").offset().top - $(window).scrollTop();
+                if(ft <= 0) {
+                    $(".site>li a").removeClass("sel");
+                    $(".focus").addClass("sel");
+                    if(vt <= 0) {
+                        $(".site>li a").removeClass("sel");
+                        $(".videoCenter").addClass("sel");
+                    }
+                }
+                else {
+                    $(".site>li a").removeClass("sel");
+                    $(".trends").addClass("sel");
+                }
+            });
+        </script>
+        <div class="tabpanel">
+            <div class="rightContent clearfix" id="trends">
+                <div class="rightTitle">
+                    <p>科瑞动态</p>
+                    <span>您的位置：<a href="javascript:;" title="首页">首页</a> &gt; <a href="javascript:;" title="新闻中心">新闻中心</a> &gt; <a href="javascript:;" title="科瑞动态">科瑞动态</a></span>
+                </div>
+                <div class="textContent">
+                    <ul class="newsMain clearfix">
+                        <li>
+                            <a href="javascript:;">
+                                <div class="time fl">
+                                    <div class="day">14</div>
+                                    <div class="ym">2017-8</div>
+                                </div>
+                                <div class="cover fl">
+                                    <img src="images/tclg1.jpg" alt="新闻图片">
+                                </div>
+                                <div class="content fl">
+                                    <h2>标题标题</h2>
+                                    <p>文字文字</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="getmore"></div>
+                </div>
+            </div>
+            <div class="rightContent clearfix" id="focus">
+                <div class="rightTitle">
+                    <p>媒体聚焦</p>
+                    <span>您的位置：<a href="javascript:;" title="首页">首页</a> &gt; <a href="javascript:;" title="新闻中心">新闻中心</a> &gt; <a href="javascript:;" title="媒体聚焦">媒体聚焦</a></span>
+                </div>
+                <div class="textContent">
+                    <!--txtMarquee-top start-->
+                    <div class="txtMarquee-top clearfix">
+                        <div class="txtMarquee">
+                            <div class="hd">
+                                <a class="next"></a>
+                                <a class="prev"></a>
+                            </div>
+                            <div class="bd">
+                                <div class="tempWrap">
+                                    <ul class="infoList">
+                                        <li class="clone">
+                                            <span class="date">2012-04-19</span>
+                                            <a href="javascript:;" target="_blank">• 热烈祝贺科瑞公司工会被评为“先进分工会"</a>
+                                        </li>
+                                        <li>
+                                            <span class="date">2012-04-19</span>
+                                            <a href="javascript:;" target="_blank">• 热烈祝贺科瑞公司工会被评为“先进分工会"</a>
+                                        </li>
+                                        <li>
+                                            <span class="date">2012-04-19</span>
+                                            <a href="javascript:;" target="_blank">• 热烈祝贺科瑞公司工会被评为“先进分工会"</a>
+                                        </li>
+                                        <li>
+                                            <span class="date">2012-04-19</span>
+                                            <a href="javascript:;" target="_blank">• 热烈祝贺科瑞公司工会被评为“先进分工会"</a>
+                                        </li>
+                                        <li>
+                                            <span class="date">2012-04-19</span>
+                                            <a href="javascript:;" target="_blank">• 热烈祝贺科瑞公司工会被评为“先进分工会"</a>
+                                        </li>
+                                        <li>
+                                            <span class="date">2012-04-19</span>
+                                            <a href="javascript:;" target="_blank">• 热烈祝贺科瑞公司工会被评为“先进分工会"</a>
+                                        </li>
+                                        <li>
+                                            <span class="date">2012-04-19</span>
+                                            <a href="javascript:;" target="_blank">• 热烈祝贺科瑞公司工会被评为“先进分工会"</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        jQuery(".txtMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:5,interTime:50,trigger:"click"});
+                    </script>
+                    <!--txtMarquee-top end-->
+                    <div class="congratulate">
+                        <div class="close"></div>
+                    </div>
+                    <script>
+                        $(".congratulate").hide();
+                        $(window).scroll(function() {
+                            var tTop = $("#focus .rightTitle").offset().top - $(window).scrollTop();
+                            if(tTop > 335 || tTop < -125) {
+                                $(".congratulate").hide();
+                            }
+                            else {
+                                $(".congratulate").show();
+                            }
+                        });
+
+                        $(".close").click(function(){
+                            $(".congratulate").hide();
+                        });
+                    </script>
+                    <div class="newList">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">• 热烈祝贺科瑞公司工会被评为“先进分工会”</a>
+                                <span>[2012-04-19]</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">• 四川科瑞软件有限责任公司二0一二届新员工报到须知</a>
+                                <span>[2012-07-2]</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">• 贺科瑞公司中标安县校园网络及会议系统项目</a>
+                                <span>[2016-08-19]</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">• 绵阳市人民政府李亚莲副市长一行莅临科瑞公司视察</a>
+                                <span>[2013-03-13]</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">• 2013年四川省电子商务应用培训会在绵阳召开</a>
+                                <span>[2013-05-21]</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">• 四川省商务厅杨厅长一行莅临科瑞公司指导工作</a>
+                                <span>[2013-06-24]</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">• 热烈祝贺科瑞公司团支部获”绵阳市五四红旗团支部”荣誉称号</a>
+                                <span>[2014-05-19]</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">• 热烈祝贺科瑞公司团支部获”绵阳市五四红旗团支部”荣誉称号</a>
+                                <span>[2014-05-19]</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">• 热烈祝贺科瑞公司团支部获”绵阳市五四红旗团支部”荣誉称号</a>
+                                <span>[2014-05-19]</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">• 热烈祝贺科瑞公司团支部获”绵阳市五四红旗团支部”荣誉称号</a>
+                                <span>[2014-05-19]</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">• 热烈祝贺科瑞公司团支部获”绵阳市五四红旗团支部”荣誉称号</a>
+                                <span>[2014-05-19]</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rightContent clearfix" id="videoCenter">
+                <div class="rightTitle">
+                    <p>视频中心</p>
+                    <span>您的位置：<a href="javascript:;" title="首页">首页</a> &gt; <a href="javascript:;" title="新闻中心">新闻中心</a> &gt; <a href="javascript:;" title="视频中心">视频中心</a></span>
+                </div>
+                <div class="textContent">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--menuBox end-->
+
+<!--footer start-->
+<div class="footer clearfix">
+    <div class="w">
+        <div class="footerL">
+            <h2>版权所有 四川科瑞软件有限责任公司</h2>
+            <h3>地址：绵阳市科创园九州大道257号 <br>
+                电话：0816-2468166 传真：0816-2468030 <br>
+                E-mail：<a href="javascript:;">service@keywaysoft.com</a></h3>
+        </div>
+        <div class="footerR">
+            <a href="javascript:;"><img src="images/qrcode.png" alt="qrcode"></a>
+        </div>
+    </div>
+</div>
+<!--footer end-->
+<div id="goTopBtn"></div>
+<script type="text/javascript">
+    $(window).scroll(function(){
+        var sc=$(window).scrollTop();
+        var rwidth=$(window).width()
+        if(sc>0){
+            $("#goTopBtn").css("display","block");
+            $("#goTopBtn").css("left",(rwidth-36)+"px")
+        }else{
+            $("#goTopBtn").css("display","none");
+        }
+    })
+    $("#goTopBtn").click(function(){
+        var sc=$(window).scrollTop();
+        $('body,html').animate({scrollTop:0},500);
+    })
+</script>
+</body>
+</html>
+
+ <!-- 使用模板引擎 -->
+<script type="text/template" id='template'>
+    <% for(var i=0;i<items.length;i++){%>
+        <li>
+            <a href="javascript:;">
+                <div class="time fl">
+                    <div class="day"><%=items[i].day%></div>
+                    <div class="ym"><%=items[i].ym%></div>
+                </div>
+                <div class="cover fl">
+                    <img src="<%=items[i].path%>" alt="新闻图片">
+                </div>
+                <div class="content fl">
+                    <h2><%=items[i].hTitle%></h2>
+                    <p><%=items[i].text%></p>
+                </div>
+            </a>
+        </li>
+    <%}%>
+</script>
+
+<!-- ajax数据传递 -->
+<script type="text/javascript">
+    $(function() {
+        $('#getmore').text('点击加载更多...');
+        $.ajax({
+                    url: 'getMore.php',
+                    type: 'get',
+                    dataType:'json',
+                    success: function(data) {
+//                     console.log(data);
+                        var clickTimes = 0,amount = 10;
+                        $("#getmore").on('click',function(){
+                            clickTimes++;
+                            var dataResult='',elm='';
+                            if(clickTimes>(data.length%amount==0?data.length/amount:parseInt(data.length/amount))){
+                                dataResult=data.slice(amount*(clickTimes-1));
+                                $('#getmore').text('没有更多了！');
+                                $('#getmore').attr('disabled','disabled');
+                            }else{
+                                dataResult=data.slice(amount*(clickTimes-1),amount*clickTimes);
+                            }
+                            var dataResults = {
+                                items:dataResult
+                            }
+                            // 调用模板引擎的方法 填充数据
+                            var resultStr = template('template', dataResults);
+                              // 添加到界面上
+                            $('.newsMain').append(resultStr);
+                        })
+                    }
+
+                });           
+    })
+</script>
